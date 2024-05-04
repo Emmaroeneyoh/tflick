@@ -27,13 +27,15 @@ const usercreateloanValidation = (req, res, next) => {
             desired_loan_term: joi.number().required() ,
       
              //  perosnnel info 
+             
           state: joi.string().required() ,
           city: joi.string().required() ,
           ssn: joi.string().required() ,
           dob: joi.string().required() ,
           name: joi.string().required() ,
-          previous_zipcode: joi.string().optional().allow('') ,
-          current_zipcode: joi.string().required() ,
+          address: joi.string().required() ,
+          previous_address: joi.string().optional().allow('') ,
+          current_time: joi.number().required() ,
       
              //  contactinfo 
           email: joi.string().required() ,

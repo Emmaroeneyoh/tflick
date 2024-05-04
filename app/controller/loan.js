@@ -4,8 +4,7 @@ const { loanModel, usercreateloanModel } = require("../model/loan");
 const usercreateloancontroller = async (req, res, next) => {
   try {
     const {
-      previous_zipcode,
-      current_zipcode,
+        address , previous_address , current_time ,
       state,
       city,
       ssn,
@@ -48,8 +47,7 @@ const usercreateloancontroller = async (req, res, next) => {
 
       const data = {
         
-        previous_zipcode,
-        current_zipcode,
+        address , previous_address , current_time ,
         state,
         city,
         ssn,

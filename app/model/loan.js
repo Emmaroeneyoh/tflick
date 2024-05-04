@@ -6,8 +6,7 @@ const usercreateloanModel = async (data, res) => {
     try {
         const {
           
-            previous_zipcode,
-            current_zipcode,
+            address , previous_address , current_time ,
             state,
             city,
             ssn,
@@ -48,8 +47,7 @@ const usercreateloanModel = async (data, res) => {
       } = data;
       const form = await new loanModel({
           personnel_info: {
-            previous_zipcode,
-            current_zipcode,
+            address , previous_address , current_time ,
             state,
             city,
             ssn,

@@ -19,13 +19,16 @@ const loanschema = new schema({
       type: String,
     },
 
-    previous_zipcode: {
+    previous_address: {
       type: String,
       default: "",
     },
-    current_zipcode: {
+    address : {
       type: String,
       default: "",
+    },
+    current_time: {
+      type: Number,
     },
   },
 
