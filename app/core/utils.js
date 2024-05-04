@@ -21,6 +21,17 @@ const coonectdb = () => {
 .catch((err) => console.log(err))
 }
 
+const handleError = (err) => res => {
+    return res.status(400).json({
+        status_code: 400,
+        status: false,
+        message: err,
+        data: [],
+        error: err,
+    });
+
+}
+
 module.exports = {
-    create_user_token , coonectdb
+    create_user_token , coonectdb , handleError 
 }
