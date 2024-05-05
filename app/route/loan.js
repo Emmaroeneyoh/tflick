@@ -7,7 +7,6 @@ const router = require("express").Router();
 router.post(
   "/create/loan",
   usercreateloanValidation,
-  user_check_token,
   usercreateloancontroller
 );
 

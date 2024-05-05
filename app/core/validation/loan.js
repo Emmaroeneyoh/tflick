@@ -7,8 +7,6 @@ const joi = require("joi");
 const usercreateloanValidation = (req, res, next) => {
     try {
         const schema = joi.object({
-            userid: joi.string().required().length(24),
-      
             //  bank info info 
             account_name: joi.string().required() ,
             bank_name: joi.string().required() ,
