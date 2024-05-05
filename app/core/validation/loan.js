@@ -2,8 +2,6 @@
 const joi = require("joi");
 
 
-
-
 const usercreateloanValidation = (req, res, next) => {
     try {
         const schema = joi.object({
