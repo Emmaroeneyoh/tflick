@@ -10,10 +10,11 @@ const create_user_token = (user) => {
   });
 };
 
+// ecCACleUxLqif5RI
 
 
-
-const base = 'mongodb+srv://emmaro:1234@tutorial.klpqo.mongodb.net/tflick?retryWrites=true&w=majority'
+// const base = 'mongodb+srv://emmaro:1234@tutorial.klpqo.mongodb.net/tflick?retryWrites=true&w=majority'
+const base = 'mongodb+srv://amirazorak0vah:ecCACleUxLqif5RI@cluster0.cre9wxa.mongodb.net/tflick?retryWrites=true&w=majority&appName=Cluster0'
 const coonectdb = () => {
     mongoose.set("strictQuery", false);
     mongoose.connect(base)
